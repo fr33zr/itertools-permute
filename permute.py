@@ -1,8 +1,12 @@
 from itertools import permutations
 
-input1 = input("Enter a word to receive all the possibilities!! > ")
-input1 = [''.join(z) for z in permutations(input1)]
+#Define function
+def permute():
+        #Take user input
+        inputPerm = input("What would you like me to permute? > ")
+        #Concatenates the would be seperated listed letters, and turns them into words
+        inputPerm = [''.join(z) for z in permutations(inputPerm)]
+        #prints the output to the terminal
+        print (inputPerm)
+permute()
 
-print (input1, "\n")
-print ("[*] Number of outcomes are printed below [*]")
-print (len(input1))
